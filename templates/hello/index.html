@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" 
+        href="{% static 'hello/css/style.css' %}" />
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <p>{{msg}}</p>
+    <p><a href="{% url schedule %}">{{schedule}}</a></p>
+    <p><a href="{% url map %}">{{map}}</a></p>
+    <p><a href="{% url message %}">{{message}}</a></p>
+    <p><a href="{% url trainer %}">{{trainer}}</a></p>
+
+    <hr>
+
+    <h3>実務実習管理サイト</h3>
+    <p>
+    <a href="https://ph.mediasolution.jp/UserSite/">management sites for intern</a>
+    </p>
+
+    <hr>
+
+    <h3>おすすめmovie</h3>
+    <p>
+    <iframe width="320"
+            height="196"
+            src="https://www.youtube.com/embed/of0qeav3_qM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+    </p>　　　
+    <p>
+    <iframe width="320"
+            height="196"
+            src="https://www.youtube.com/embed/1ySV1aSkrFM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+    </p>　　　
+
+    <hr>
+
+    <h3>おすすめsites</h3>
+    <p>フォーリアのウェブサイトです</p>
+    <p>
+    <a href="https://www.folia.jp/">folia</a>
+    </p>　　　
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'hello/css/style.css' %}" />
+</head>
+<br>
+    <h1>{{title}}</h1>
+    <p>{{message|safe}}</p>
+    <p>{{msg}}</p>
+    <p><a href="{% url index %}">{{ index }}</a></p>
+
+<hr>
+
+<h3>和合店</h3>
+    <p>〒433-8127 中区和合北1-1-32</p>
+    <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.7887897545074!2d137.72007491508407!3d34.73571788042546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601adf00d0f579f1%3A0xf357dc2e0c11bdc7!2z44CSNDMzLTgxMjcg6Z2Z5bKh55yM5rWc5p2-5biC5Lit5Yy65ZKM5ZCI5YyX77yR5LiB55uu77yR4oiS77yT77ySIOiWrOWxgOODleOCqeODvOODquOCoiDlkozlkIjlupc!5e0!3m2!1sja!2sjp!4v1598339075663!5m2!1sja!2sjp"
+            width="320"
+            height="196"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+    </iframe>
+    </p>
+    <p>
+    耳鼻科、眼科を中心に幅広く処方せんを応需しています。
+    <br>
+    地元の住民の方に気軽に立ち寄っていただける薬局を目指しています。
+    </p>    　　　
+
+<hr>
+
+<h3>元浜店</h3>
+    <p>〒430-0942 静岡県浜松市中区元浜町301</p>
+    <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.5372790705565!2d137.72965481508353!3d34.71684918043034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ade679cf892c3%3A0xdf43a220645278dd!2z6Jas5bGA44OV44Kp44O844Oq44KiIOWFg-a1nOW6lw!5e0!3m2!1sja!2sjp!4v1600146781070!5m2!1sja!2sjp"
+            width="320"
+            height="196"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+    </iframe>
+    </p>
+    <p>
+    近隣皮膚科医院を中心に処方せんを応需しています。
+    <br>
+    スキンケアのことならなんでもご相談いただける、身近な薬局です。
+    </p>
+</body>
+</html>

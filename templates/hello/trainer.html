@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css"
+    href="{% static 'hello/css/style.css' %}" />
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <p>{{message|safe}}</p>
+    <p>{{msg}}</p>
+    <p><a href="{% url index %}">{{ index }}</a></p>
+
+    <hr>
+
+    <h3>実務実習管理サイト</h3>
+    <p>
+    【野口店・青山先生】
+    <br>
+    ID：aoyama0127
+    <br>
+    PW：kazue0127
+    <br><br>
+    【和合店・加茂】
+    <br>
+    ID：folia6886
+    <br>
+    PW：wagou6886
+    </p>
+    <p>
+    <a href="https://ph.mediasolution.jp/UserSite/">management sites for intern</a>
+    </p>
+
+    <hr>
+
+    <p>
+    <a href="https://drive.google.com/drive/folders/0ANKtij-6qcOdUk9PVA?usp=gmail">shared drive</a>
+    </p>
+    <p>
+    <img src="{% static 'img/150323.png' %}">
+    </p>
+</body>
+</html>
