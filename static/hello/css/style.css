@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    color:gray;
+    font-size:16pt;
+}
+h1 {
+    color:palegreen;
+    opacity:0.2;
+    font-size:60pt;
+    margin-top:-20px;
+    margin-bottom:0px;
+    text-align:left;
+}
+p {
+    margin:10px;
+}
+a {
+    color:springgreen;
+    text-decoration: none;
+}
+
+table {
+    margin:10px;
+    font-size:14pt;
+}
+table tr th {
+    background-color:lightgreen;
+    color:black;
+    padding:2px 10px;
+    border-size:2px;
+}
+table tr td {
+    background-color:#eee;
+    color:#666;
+    padding:2px 10px;
+    border-size:2px;
+}
